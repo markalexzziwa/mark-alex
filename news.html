@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="design.css">
+    </link>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>NEWS</title>
+    <script src="bsk-calender.js" defer></script>
+    <script src="news-submit.js" defer></script>
+    <script src="dark-light-mode.js" async></script>
+</head>
+
+<body>
+    
+    <button id="toggleButton">Dark/light Mode</button>
+    <h1>NEWS</h1>
+    <!--FLEX DISPLAY-->
+    <div class="containerflex">
+        <div class="itemflex">
+            <h3>RELIGION;</h3><br>
+            <p3>Every first Sunday and Friday of the month, students will have prayer with the Arch-bishop and distict
+                Muslim Leader respctively</p3>
+            <h3>Compulsory</h3>
+            <p3>Every Sunday, Christians ie Catholics and Anglicans have Mass while Muslims are having their prayers
+                too.</p3>
+            <p3>Juma payers are held at school with a Muslim Leader from Aghakhan Mosgue.</p3>
+        </div>
+        <div class="itemflex">
+            <h3>ACADEMICS;</h3><br>
+            <p3>Registration is open for students applying for vacancies in S.1, S.2, S.3 and S.5.</p3><br>
+            <p3>Student must respond to the school siren at all ring times.</p3><br>
+            <p3>A student must join school with 20% of the school dues cleared.</p3><br>
+            <p3>Weekend visits are allowed only and only on Visitation day.</p3>
+        </div>
+        <div class="itemflex">
+            <h3>SPORTS;</h3><br>
+            <p3>BSK reaches an agreement with EL-Cambio Academy as the sports gala approaches.</p3><br>
+            <p3>BSK merges with victory in both regional and municipal boys football.</p3><br>
+            <p3>BSK unfortunately losses 2-0 in match aganist St. Mary's Kitende at quator Finals</p3><br>
+            <p3>BSK mid-fielder Isma Magala mergers as the Most Valuable Player(MVP).</p3><br>
+            <p3>The U17 national team coach calls for 4 boys from the BSK football team.</p3>
+        </div>
+    </div>
+    <div class="content">
+        <div class="events-container">
+            <div class="events-header">
+                <h2>Term Events</h2>
+            </div>
+            <button onclick="sortEvents()">Sort by Date</button>
+            <div class="events-list" id="events-list"></div>
+        </div>
+        <form id="news-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title">
+
+            <label for="content">Content:</label>
+            <textarea id="content" name="content"></textarea>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author">
+
+            <button type="submit">Submit News</button>
+        </form>
+        <div id="submitted-news"></div>
+    </div>
+</body>
+<footer>
+    <nav class="bot">
+        <p3><button><a href="index.html">HOME&#x1F3E0;</a></button></p3>
+        <p3><button><a href="gallery.html">SCHOOL</a></button></p3>
+        <p3><button><a href="academics.html">ACADEMICS</a></button></p3>
+        <p3><button><a href="news.html">NEWS</a></button></p3>
+        <p3><button><a href="activities.html">ACTIVITIES</a></button></p3>
+        <p3><button><a href="contact.html">CONTACT US&#x1F4DE;</a></button></p3>
+        <p3><button><a href="about.html">ABOUT US&#128712</a></button></p3>
+    </nav>
+</footer>
+
+</html>
